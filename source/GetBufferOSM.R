@@ -13,8 +13,8 @@ GetBufferOSM =  function(id, buffer){
   ) %>% gsub("\\n", replacement=" ",.)
   
   drv = dbDriver("PostgreSQL")
-  conn = dbConnect(drv, user='postgres', password='545703', 
-                   host='localhost', port='5432', dbname='findata')
+  conn = dbConnect(drv, user='postgres', password='******', 
+                   host='localhost', port='5432', dbname='*****')
   
   
   res = dbGetQuery(conn, query)
